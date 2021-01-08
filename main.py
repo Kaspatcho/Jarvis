@@ -28,16 +28,16 @@ understood = False
 while not understood:
     result = voiceToText().strip()
     understood = True
-    if result == 'play my music\'s':
+    if result == 'play my music\'s': # toca umas musicas legais
             import webbrowser as web
-            web.open('https://www.youtube.com/watch?v=QzcvRDWgRIE&list=PLqBeZhxgx5uZp_B8xZxdEUmj1zlyFHoZK&index=1&ab_channel=WarnerMusicDenmark')
-    elif result == 'minesweeper':
+            web.open('https://www.youtube.com/watch?v=-tJYN-eG1zk&list=PL718D16542AE44430&ab_channel=QueenOfficial')
+    elif result == 'minesweeper': # abre o campo minado no google
         import webbrowser as web
         web.open('https://www.google.com/search?q=minesweeper&oq=minesweeper&aqs=chrome..69i57.1008j0j7&sourceid=chrome&ie=UTF-8')
-    elif result == 'open discord':
+    elif result == 'open discord': # abre o discord
         import webbrowser as web
         web.open('https://discord.com/channels/@me')
-    elif 'search for' in result:
+    elif 'search for' in result: # pesquisa algo no google
         import webbrowser as web
         search = result.replace('search for', '').strip()
         web.open(f'https://google.com/search?q={search}')
